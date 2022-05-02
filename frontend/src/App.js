@@ -6,6 +6,7 @@ import AllEmployee from './components/AllEmployee';
 import DeleteEmployee from './components/DeleteEmployee';
 import UpdateEmployee from './components/UpdateEmployee';
 import UpdateForm from './components/UpdateForm';
+import BarChart from './components/BarChart';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
@@ -15,6 +16,7 @@ function App() {
         <Header/>
         
         
+        
         <Routes>
           
           <Route path='/add' exact element={<AddEmployee/>}/>
@@ -22,6 +24,7 @@ function App() {
           <Route path='/delete' exact element={<DeleteEmployee/>}/>
           <Route path='/update' exact element={<UpdateEmployee/>}/>
           <Route path='/update/:id' exact element={<UpdateForm/>}/>
+          <Route path='/att' exact element={<BarChart/>}/>
         
         </Routes>
 

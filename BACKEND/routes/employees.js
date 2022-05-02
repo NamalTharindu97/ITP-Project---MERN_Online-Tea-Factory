@@ -101,7 +101,7 @@ router.route("/delete/:id").delete(async (req,res) => {
 router.route("/get/:id").get(async (req,res) => {
     let userId = req.params.id;
     const user = await employee.findById(userId).then((employee) =>{
-        res.status(200).send({status: "Employee fetched" , user: employee})
+        res.status(200).send({status: "Employee fetched" , employee})
     }).catch(()=> {
         console.log(err.message);
         res.status(500).send({status: "Error With get employee" ,error: err.message});
