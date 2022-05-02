@@ -22,20 +22,6 @@ useEffect(() => {
 
 
 
-function onDelete(id) {
-    axios.delete("http://localhost:8070/employee/delete/"+ id)
-        .then((res) => {
-            console.log(res)
-            alert('employee detail deleted')
-            window.location.reload(true)//reload page
-
-        }).catch(() => {
-            alert('error while deleting Inventory Detail')
-        })
-
-}
-
-
     return(
         <div className="container4">
 
@@ -67,7 +53,10 @@ function onDelete(id) {
                             <td key={post.employee_id}>{post.marital_status}</td>
                             <td key={post.employee_id}>{post.contact_no}</td>
                             <td key={post.employee_id}>{post.employee_type}</td>
-                            <td><a href={`/update/${post._id}`}>Update</a></td>
+                            <td>
+                        <a className="btn btn-warning" href={`/update/${post._id}`}>
+                          <i className="fas fa-edit"></i>&nbsp;Update
+                        </a></td>
 
                     </tr>
                     ))}

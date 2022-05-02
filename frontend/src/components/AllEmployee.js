@@ -33,8 +33,8 @@ useEffect(() => {
                     <th scope="col">Marital_Status</th>
                     <th scope="col">Contact</th>
                     <th scope="col">Date_Of_Birth</th>
-                    <th scope="col">Employee_Group</th>
-                    <th scope="col">Employee_Type</th>
+                    <th scope="col">Employee_G</th>
+                    <th scope="col">Employee_T</th>
                     <th scope="col">Basic_Salary</th>
                     </tr>
                 </thead>

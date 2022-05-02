@@ -27,7 +27,7 @@ function Header() {
               <a href="/all" className="nav-link"> Employee Report</a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link"> Attendance </a>
+              <a href="/att" className="nav-link"> Attendance </a>
             </li>
               
             </ul>
